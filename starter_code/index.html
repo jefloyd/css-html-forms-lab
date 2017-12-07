@@ -120,23 +120,37 @@
 
 	    	/*
 			
-				//For each value entered into a form input, add the input to the corresponding sentence, then append the text into the results section:
+				//For each value entered into a form input, add the input to the corresponding sentence, then append the text into the results section:*/
 
 
-				//"Once upon a time there was a Developer named NAME."
+				
 
-				//"NAME came to General Asssembly to VERB1 the great mountain of programming knowledge."
+			//"Once upon a time there was a Developer named NAME."
+	    	 var Name = $('#name').val(); // the name variable is the id name 
+	    	 var Results =$('.results');
+	    	 $(Results).append('<p>Once upon a time there was a Developer named '+ Name +'.</p>')
 
-				//""MISSION", NAME shouted."
-	
-				//"Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN."
 
-				//"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."*/
+	    	 //"NAME came to General Asssembly to VERB1 the great mountain of programming knowledge."
+	    	 var Verb1 =$('#verb-1').val();
+	    	$(Results).append(" " + Name + " came to General Asssembly to " + Verb1 + 
+	    	" the great mountain of programming knowledge.") 
 
-	    	 var $Name= ('Name').val();
-	    	 $("Once upon a time there was a Developer named NAME.")
-	    	 
-	    	 
+
+	    	//""MISSION", NAME shouted."
+	    	var Mission =$('#mission').val();
+	    	$(Results).append( " " + Mission + "" + Name + "shouted.") //keep getting error code about parentheses
+
+
+			//"Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN."
+	    	 var Verb1 =$('#verb-1').val();
+	    	$(Results).append(" " + Name + " came to General Asssembly to " + Verb1 + 
+	    	" the great mountain of programming knowledge.") 
+	    	
+
+			//"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
+			
+
 
 
 		});
