@@ -3,6 +3,7 @@
 <head>
 	<title>CSS HTML Forms Lab</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
 
 </head>
 <body>
@@ -63,6 +64,8 @@
 					</div>
 					<div class="row formGroup">
 	
+
+
 						<label for="checkboxes">Sentiment:</label>
 						<div class="checkboxes">
 							<div class="check">
@@ -79,13 +82,15 @@
 							</div>
 				    	</div>
 
+
+
 					</div>
 					<div class="row formGroup">
 				    	<label for="noun-2">Noun:</label>
 				    	<input id="noun-2" name="noun-2">
 					</div>
 					<div class="row formGroup">
-				    	<input type="submit">
+				    	<button>Submit</button>
 				    </div>
 				    
 			    </div>
@@ -139,18 +144,27 @@
 
 	    	//""MISSION", NAME shouted."
 	    	var Mission =$('#mission').val();
-	    	$(Results).append( " " + Mission + "" + Name + "shouted.") //keep getting error code about parentheses
+	    	$(Results).append( " " +Mission+ ' ' +  Name + " shouted.") //keep getting error code about parentheses
+
 
 
 			//"Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN."
-	    	 var Verb1 =$('#verb-1').val();
-	    	$(Results).append(" " + Name + " came to General Asssembly to " + Verb1 + 
-	    	" the great mountain of programming knowledge.") 
-	    	
+	    	 
+	    	 /*var selectedVal= "";
+	    	 var Sentiment =$(".check input"[type='checkbox']:checked).val();
+	    	 var Noun =$('.noun-1').val();
+	    	$(Results).append("Though " +Sentiment+ Name + "was able to overcome all obstacles with the power of their " + Noun + "")
+
 
 			//"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
-			
 
+
+			var ADJECTIVE2 =$('#check1 #check2 #check3').val();
+	    	var NOUN2 =$('#noun-2').val();
+	    	$(Results).append("In the end, their succes can be contributed entirely to their " + ADJECTIVE2+ ' '  +NOUN2)
+
+
+*/
 
 
 		});

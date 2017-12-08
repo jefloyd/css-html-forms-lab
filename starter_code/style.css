@@ -5,6 +5,15 @@
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
 }
 
+body{
+	font-family: 'Proza Libre', sans-serif;
+}
+
+
+h1{
+	font-size: 50px;
+	font-weight: bold;
+}
 /* 
 	Use Google Fonts to make all of the text Proza Libre.
 
@@ -20,6 +29,51 @@
 
 	Every container, form, input, and button should have rounded corners.
 */
+
+#main{
+	width: 100%;
+
+}
+
+.formSection.container{
+	background: #dcdce2;
+	max-width: 50%;
+	min-width: 40%;
+	margin: 25px;
+	border-radius: 10px;
+	float: left;
+
+}
+
+.container.results{
+	background: #b8caa7;
+	max-width: 80%;
+	min-width: 40%;
+	float: left;
+	border-radius: 10px;
+	margin: 25px;
+	
+}
+
+#name, #verb-1, #mission, #noun-1, #noun-2{
+	border-radius: 5px;
+	border: 1px solid #cec8c8;
+	padding: 10px;
+	width:;
+
+}
+
+button {
+	background:#9ae6b3;
+	font-size:23px !important;
+	height: 60px;
+	width: 120px;
+	margin: 20px;
+	float: right;
+	
+}
+
+
 
 /*-------- Form Styles --------*/
 
