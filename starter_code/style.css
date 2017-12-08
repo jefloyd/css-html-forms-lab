@@ -47,11 +47,11 @@ h1{
 
 .container.results{
 	background: #b8caa7;
-	max-width: 80%;
+	max-width: 50%;
 	min-width: 40%;
 	float: left;
 	border-radius: 10px;
-	margin: 25px;
+	margin: 15px;
 	
 }
 

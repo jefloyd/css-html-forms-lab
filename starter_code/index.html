@@ -147,24 +147,38 @@
 	    	$(Results).append( " " +Mission+ ' ' +  Name + " shouted.") //keep getting error code about parentheses
 
 
-
 			//"Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN."
 	    	 
-	    	 /*var selectedVal= "";
-	    	 var Sentiment =$(".check input"[type='checkbox']:checked).val();
-	    	 var Noun =$('.noun-1').val();
-	    	$(Results).append("Though " +Sentiment+ Name + "was able to overcome all obstacles with the power of their " + Noun + "")
+	    	 var sentiment =$('input[name=sentiment]:checked').val();
+	    	 var Noun =$('#noun-1').val();
+	    	 $(Results).append("Though " +sentiment+ ', ' + Name  +  " was able to overcome all obstacles with the power of their " + Noun + ".")
 
 
 			//"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
 
+				/*<label for="checkboxes">Sentiment:</label>
+						<div class="checkboxes">
+							<div class="check">
+							  <input id="check1" type="checkbox" name="adjective-2" value="powerful"> 
+							  <label for="check1">powerful</label>
+							</div>
+							<div class="check">
+								<input id="check2" type="checkbox" name="adjective-2" value="honed">
+								<label for="check2">honed</label> 
+							</div>
+							<div class="check">
+								<input id="check3" type="checkbox" name="adjective-2" value="dedicated"> 
+								<label for="check3">dedicated</label>
+							</div>
+				    	</div>*/
 
-			var ADJECTIVE2 =$('#check1 #check2 #check3').val();
+
+			var ADJECTIVE2 =$('input[name=adjective-2]:checked').val();
 	    	var NOUN2 =$('#noun-2').val();
-	    	$(Results).append("In the end, their succes can be contributed entirely to their " + ADJECTIVE2+ ' '  +NOUN2)
+	    	$(Results).append(" In the end, their success can be contributed entirely to their " + ADJECTIVE2+ ' '  +NOUN2+ ".")
 
 
-*/
+
 
 
 		});
